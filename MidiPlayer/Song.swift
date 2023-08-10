@@ -18,7 +18,7 @@ class Song {
         }
     }
     
-    func addTrack(instrumentId: UInt8, tempo: Float64) -> Int {
+    func addTrack(instrumentId: UInt8) -> Int {
         var track: MusicTrack?
         
         guard MusicSequenceNewTrack(musicSequence!, &track) == OSStatus(noErr) else {
@@ -31,6 +31,10 @@ class Song {
         var inMessage = MIDIChannelMessage(status: 0xC0, data1: instrumentId, data2: 0, reserved: 0)
         MusicTrackNewMIDIChannelEvent(track!, 0, &inMessage)
         
+        return trackId
+    }
+    
+    func setTempo(tempo: Float64) {
         let timeStamp = MusicTimeStamp(0)
         var tempoTrack: MusicTrack?
         MusicSequenceGetTempoTrack(musicSequence! ,&tempoTrack);
@@ -38,8 +42,6 @@ class Song {
         removeTempoEvents(tempoTrack: tempoTrack!)
         
         MusicTrackNewExtendedTempoEvent(tempoTrack!, timeStamp, tempo)
-        
-        return trackId
     }
     
     func addNote(trackId: Int, note: UInt8, duration: Float, position: Float) {

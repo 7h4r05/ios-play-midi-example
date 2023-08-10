@@ -11,7 +11,8 @@ import Foundation
 class SongComposer {
     func compose() -> Song {
         let song = Song()
-        let trackId = song.addTrack(instrumentId: 48, tempo: 240)
+        let trackId = song.addTrack(instrumentId: 48)
+        song.setTempo(tempo: 240)
         var currentPosition: Float = 0
         for _ in 0...1 {
             song.addNote(trackId: trackId, note: 64,
