@@ -6,14 +6,24 @@
 //
 
 import SwiftUI
+import AVFoundation
+
 
 struct ContentView: View {
+    let player = MidiPlayer()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Play audio", action: {
+                let composer = SongComposer()
+                let song = composer.compose()
+                
+                let player = MidiPlayer()
+                player.prepareSong(song: song)
+                
+                Task {
+                    await player.playSong()
+                }
+            })
         }
         .padding()
     }

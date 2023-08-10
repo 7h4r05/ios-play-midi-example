@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62991CA2A857DA300225521 /* SongComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62991C92A857DA300225521 /* SongComposer.swift */; };
 		C6DD80422A7FA58E003182CE /* MidiPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD80412A7FA58E003182CE /* MidiPlayerApp.swift */; };
 		C6DD80442A7FA58E003182CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD80432A7FA58E003182CE /* ContentView.swift */; };
 		C6DD80462A7FA58F003182CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DD80452A7FA58F003182CE /* Assets.xcassets */; };
 		C6DD80492A7FA58F003182CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6DD80482A7FA58F003182CE /* Preview Assets.xcassets */; };
+		C6DD80502A7FA7B2003182CE /* Nokia_Tongbao_Bank__Series_30__8-bit.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = C6DD804F2A7FA7B1003182CE /* Nokia_Tongbao_Bank__Series_30__8-bit.sf2 */; };
+		C6DD80522A7FA881003182CE /* MidiPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD80512A7FA881003182CE /* MidiPlayer.swift */; };
+		C6DD80542A7FAC4F003182CE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD80532A7FAC4F003182CE /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C62991C92A857DA300225521 /* SongComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongComposer.swift; sourceTree = "<group>"; };
 		C6DD803E2A7FA58E003182CE /* MidiPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DD80412A7FA58E003182CE /* MidiPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPlayerApp.swift; sourceTree = "<group>"; };
 		C6DD80432A7FA58E003182CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6DD80452A7FA58F003182CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6DD80482A7FA58F003182CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6DD804F2A7FA7B1003182CE /* Nokia_Tongbao_Bank__Series_30__8-bit.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nokia_Tongbao_Bank__Series_30__8-bit.sf2"; sourceTree = "<group>"; };
+		C6DD80512A7FA881003182CE /* MidiPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPlayer.swift; sourceTree = "<group>"; };
+		C6DD80532A7FAC4F003182CE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,14 @@
 		C6DD80402A7FA58E003182CE /* MidiPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C6DD804F2A7FA7B1003182CE /* Nokia_Tongbao_Bank__Series_30__8-bit.sf2 */,
 				C6DD80412A7FA58E003182CE /* MidiPlayerApp.swift */,
 				C6DD80432A7FA58E003182CE /* ContentView.swift */,
 				C6DD80452A7FA58F003182CE /* Assets.xcassets */,
 				C6DD80472A7FA58F003182CE /* Preview Content */,
+				C6DD80512A7FA881003182CE /* MidiPlayer.swift */,
+				C6DD80532A7FAC4F003182CE /* Song.swift */,
+				C62991C92A857DA300225521 /* SongComposer.swift */,
 			);
 			path = MidiPlayer;
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DD80502A7FA7B2003182CE /* Nokia_Tongbao_Bank__Series_30__8-bit.sf2 in Resources */,
 				C6DD80492A7FA58F003182CE /* Preview Assets.xcassets in Resources */,
 				C6DD80462A7FA58F003182CE /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62991CA2A857DA300225521 /* SongComposer.swift in Sources */,
+				C6DD80542A7FAC4F003182CE /* Song.swift in Sources */,
+				C6DD80522A7FA881003182CE /* MidiPlayer.swift in Sources */,
 				C6DD80442A7FA58E003182CE /* ContentView.swift in Sources */,
 				C6DD80422A7FA58E003182CE /* MidiPlayerApp.swift in Sources */,
 			);
