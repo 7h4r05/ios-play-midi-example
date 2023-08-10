@@ -17,9 +17,6 @@ class MidiPlayer {
             fatalError("\"Nokia_Tongbao_Bank__Series_30__8-bit.sf2\" file not found.")
         }
         self.bankURL = bankURL
-        
-        var array: Unmanaged<CFArray>?;
-        CopyInstrumentInfoFromSoundBank(self.bankURL as CFURL, &array)
     }
     
     func prepareSong(song: Song){
